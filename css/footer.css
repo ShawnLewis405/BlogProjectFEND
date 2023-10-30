@@ -1,0 +1,19 @@
+.main-footer {
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 10%;
+    background-color: #163172;
+}
+
+
+
+.footerLinks {
+    color: #f6f6f6;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    
+
+}

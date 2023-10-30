@@ -1,0 +1,126 @@
+@import url("./navBar.css");
+@import url("./footer.css");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.blog_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 200px ;
+    grid-template-areas:
+        "header header sidebar"
+        "content content sidebar"
+        "footer footer sidebar";   
+}
+
+.image_caption {
+    color: gray;
+    font-size: 14px; 
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    grid-area: content;
+    background-color: #f6f6f6;
+    gap: 30px;
+    align-items: center;
+    padding: 50px 0;  
+}
+
+
+
+@media only screen and (max-width: 767px) {
+
+    .blog_container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: #f6f6f6; 
+    }
+
+    .content {
+        padding: 50px 20px;
+        align-items: center;
+        background-color: #f6f6f6;  
+    }
+
+    .sidebar {
+        visibility: hidden;
+    }   
+}
+
+
+
+q {
+    color: #163172;
+}
+
+.sharing {
+    display: flex;
+    gap: 15px;
+}
+
+.desc_text {
+    width: 50%;
+    text-align: center;
+}
+
+.desc_text_indented {
+    width: 50% ;
+    text-indent: 40px;
+}
+
+.blog_images {
+    width: 50%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.blog_proflie_pic {
+    width: 100px;
+    height: 100px;
+    border-color: #163172;
+    border-radius: 80px;
+    object-fit: cover;
+}
+
+.profile_links {
+    color: #163172;
+    padding-top: 5px;
+}
+
+p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 22px;
+}
+
+.footerLinks {
+    color: #f6f6f6;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    grid-area: sidebar;
+    align-items: center;
+    gap: 7px;
+    background-color: #f6f6f6;
+    padding-top: 50px;   
+}
+
+em {
+    color: #1e56a0;
+}
+
+u {
+    color: red;
+}
